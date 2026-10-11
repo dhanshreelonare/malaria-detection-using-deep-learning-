@@ -17,6 +17,7 @@
 ## 📑 Table of Contents
 
 - [Overview](#-overview)
+- [Project Documentation & Review](#-project-documentation--review)
 - [Project Structure](#-project-structure)
 - [Demo](#-demo)
 - [Models](#-models)
@@ -26,7 +27,7 @@
 - [Configuration](#️-configuration)
 - [Results](#-results)
 - [Tech Stack](#-tech-stack)
-- [License](#-license)
+- [License & Copyright](#-license)
 
 ---
 
@@ -43,29 +44,55 @@ The project includes:
 
 ---
 
+## 📚 Project Documentation & Review
+
+Comprehensive documentation prepared for academic review, research submission, and intellectual property registration:
+
+| Document | Type | Description |
+| :--- | :---: | :--- |
+| **[SETUP_AND_RUN.md](SETUP_AND_RUN.md)** | Guide | Complete setup, virtual environment, dataset download & app run instructions |
+| **[PROJECT_REVIEW.md](PROJECT_REVIEW.md)** | Review | Complete Literature Survey, Methodology, System Design & Performance Analysis |
+| **[RESEARCH_PAPER.md](RESEARCH_PAPER.md)** | Paper | Full academic research paper formatted for IEEE / Springer journal submission |
+| **[PATENT_COPYRIGHT_SPECIFICATION.md](PATENT_COPYRIGHT_SPECIFICATION.md)** | IP & Legal | Formal Patent Application Claims & Copyright Ownership Declaration |
+| **[Project Review PDF](Project%20Documentation/Project_Review_Literature_Survey_Methodology_Design.pdf)** | PDF | Compiled Project Review PDF with Literature Survey, Methodology & Design |
+| **[Research Paper PDF](Project%20Documentation/Malaria_Detection_Research_Paper.pdf)** | PDF | Formatted Research Paper PDF |
+| **[Patent & Copyright PDF](Project%20Documentation/Malaria_Detection_Copyright_Patent_Specification.pdf)** | PDF | Official Patent & Copyright Specification PDF |
+
+---
+
 ## 📁 Project Structure
 
 ```
-malaria/
+malaria-detection-using-deep-learning-/
 │
-├── 📄 app.py                          # Flask web application & REST API
-├── 📄 malaria_detection.py            # Full ML pipeline (Activities 2.1–2.7)
-├── 📄 download_dataset.py             # Standalone Kaggle dataset downloader
-├── 📄 requirements.txt                # Python dependencies
-├── 📄 .gitignore                      # Git exclusions
+├── 📄 app.py                                              # Flask web application & REST API
+├── 📄 malaria_detection.py                                # Full ML pipeline (Activities 2.1–2.7)
+├── 📄 download_dataset.py                                 # Standalone Kaggle dataset downloader
+├── 📄 generate_documentation_pdfs.py                      # PDF compilation script (ReportLab)
+├── 📄 requirements.txt                                    # Python dependencies
+├── 📄 LICENSE                                             # MIT License (Dhanshree Lonare)
+│
+├── 📖 SETUP_AND_RUN.md                                    # Comprehensive setup & execution guide
+├── 📖 PROJECT_REVIEW.md                                    # Literature Survey, Methodology & Design
+├── 📖 RESEARCH_PAPER.md                                    # Academic Research Paper
+├── 📖 PATENT_COPYRIGHT_SPECIFICATION.md                   # Patent & Copyright Specifications
+│
+├── 📁 Project Documentation/
+│   ├── 📄 Project_Review_Literature_Survey_Methodology_Design.pdf
+│   ├── 📄 Malaria_Detection_Research_Paper.pdf
+│   └── 📄 Malaria_Detection_Copyright_Patent_Specification.pdf
 │
 ├── 📁 templates/
-│   └── index.html                     # Frontend UI (dark-mode, drag & drop)
+│   └── index.html                                         # Glassmorphism dark-mode diagnostic UI
+├── 📁 static/                                             # Web static assets
 │
-├── 📁 static/                         # Static assets (CSS, JS, images)
+├── 🤖 CustomCNN_best.h5                                   # Best checkpoint – Custom CNN
+├── 🤖 MobileNetV2_best.h5                                 # Best checkpoint – MobileNetV2
+├── 🤖 EfficientNetB0_best.h5                              # Best checkpoint – EfficientNetB0
 │
-├── 🤖 CustomCNN_best.h5               # Best checkpoint – Custom CNN (~93% acc)
-├── 🤖 MobileNetV2_best.h5             # Best checkpoint – MobileNetV2 (~91% acc)
-├── 🤖 EfficientNetB0_best.h5          # Best checkpoint – EfficientNetB0
-│
-├── 📊 CustomCNN_training_history.png  # Training curves
-├── 📊 CustomCNN_confusion_matrix.png  # Confusion matrix
-├── 📊 CustomCNN_roc_curve.png         # ROC-AUC curve
+├── 📊 CustomCNN_training_history.png                      # Training curves
+├── 📊 CustomCNN_confusion_matrix.png                      # Confusion matrix
+├── 📊 CustomCNN_roc_curve.png                             # ROC-AUC curve
 └── 📊 MobileNetV2_training_history.png
 ```
 
@@ -349,7 +376,7 @@ The following charts are automatically generated during training:
 This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
 ```
-MIT License  ©  2026  Ayush Narkhede
+MIT License  ©  2026  Dhanshree Lonare
 ```
 
 ---

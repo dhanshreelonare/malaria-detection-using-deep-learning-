@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Dhanshree Lonare. All rights reserved.
 import sys
 import io
 

@@ -1,3 +1,4 @@
+# Copyright (c) 2026 Dhanshree Lonare. All rights reserved.
 """
 app.py  –  Flask inference web-app for Malaria Detection
 ==========================================================
